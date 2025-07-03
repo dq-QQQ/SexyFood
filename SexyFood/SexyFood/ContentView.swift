@@ -7,52 +7,33 @@
 
 import SwiftUI
 
+enum ViewType {
+    case bestshot
+    case diary
+    case trigger
+}
+
 struct ContentView: View {
     var body: some View {
-        VStack(spacing: 20) {
-            Spacer()
-            HStack(spacing: 20) {
-                Spacer()
-                Button("베스트샷") {
-                    print("버튼 1 눌림")
+        NavigationStack {
+            VStack {
+                NavigationLink("Best Shot", value: ViewType.bestshot)
+                Spacer().frame(height: 30)
+                NavigationLink("Diary", value: ViewType.diary)
+                Spacer().frame(height: 30)
+                NavigationLink("Trigger", value: ViewType.trigger)
+                
+            }.navigationDestination(for: ViewType.self) { value in
+                switch value {
+                case .bestshot: BestShotView()
+                case .diary: DiaryView()
+                case .trigger: EmptyView()
                 }
-                Spacer()
-                Button("달력일기") {
-                    print("버튼 2 눌림")
-                }
-                Spacer()
             }
-            Spacer()
-            HStack(spacing: 20) {
-                Spacer()
-                Button("알림트리거") {
-                    print("버튼 3 눌림")
-                }
-                Spacer()
-                Button("사진일기저장") {
-                    print("버튼 4 눌림")
-                }
-                Spacer()
-            }
-            Spacer()
-            HStack(spacing: 20) {
-                Spacer()
-                Button("버튼 5") {
-                    print("버튼 5 눌림")
-                }
-                Spacer()
-                Button("버튼 6") {
-                    print("버튼 6 눌림")
-                }
-                Spacer()
-            }
-            Spacer()
         }
-        .padding()
-        .buttonStyle(.borderedProminent)
-        
     }
 }
+
 
 #Preview {
     ContentView()

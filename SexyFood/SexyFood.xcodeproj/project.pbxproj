@@ -6,17 +6,22 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A1EE8B6B2E16914000672AED /* BestShotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EE8B662E16914000672AED /* BestShotView.swift */; };
+		A1EE8B6C2E16914000672AED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EE8B672E16914000672AED /* ContentView.swift */; };
+		A1EE8B6D2E16914000672AED /* DiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EE8B682E16914000672AED /* DiaryView.swift */; };
+		A1EE8B6E2E16914000672AED /* SexyFoodApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EE8B692E16914000672AED /* SexyFoodApp.swift */; };
+		A1EE8B6F2E16914000672AED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1EE8B652E16914000672AED /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		A1EE8B532E0D61AA00672AED /* SexyFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SexyFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1EE8B652E16914000672AED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1EE8B662E16914000672AED /* BestShotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestShotView.swift; sourceTree = "<group>"; };
+		A1EE8B672E16914000672AED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A1EE8B682E16914000672AED /* DiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryView.swift; sourceTree = "<group>"; };
+		A1EE8B692E16914000672AED /* SexyFoodApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SexyFoodApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		A1EE8B552E0D61AA00672AED /* SexyFood */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SexyFood;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A1EE8B502E0D61AA00672AED /* Frameworks */ = {
@@ -32,7 +37,7 @@
 		A1EE8B4A2E0D61AA00672AED = {
 			isa = PBXGroup;
 			children = (
-				A1EE8B552E0D61AA00672AED /* SexyFood */,
+				A1EE8B6A2E16914000672AED /* SexyFood */,
 				A1EE8B542E0D61AA00672AED /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +48,18 @@
 				A1EE8B532E0D61AA00672AED /* SexyFood.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A1EE8B6A2E16914000672AED /* SexyFood */ = {
+			isa = PBXGroup;
+			children = (
+				A1EE8B652E16914000672AED /* Assets.xcassets */,
+				A1EE8B672E16914000672AED /* ContentView.swift */,
+				A1EE8B662E16914000672AED /* BestShotView.swift */,
+				A1EE8B682E16914000672AED /* DiaryView.swift */,
+				A1EE8B692E16914000672AED /* SexyFoodApp.swift */,
+			);
+			path = SexyFood;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +76,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				A1EE8B552E0D61AA00672AED /* SexyFood */,
 			);
 			name = SexyFood;
 			packageProductDependencies = (
@@ -109,6 +123,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1EE8B6F2E16914000672AED /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +134,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1EE8B6B2E16914000672AED /* BestShotView.swift in Sources */,
+				A1EE8B6C2E16914000672AED /* ContentView.swift in Sources */,
+				A1EE8B6D2E16914000672AED /* DiaryView.swift in Sources */,
+				A1EE8B6E2E16914000672AED /* SexyFoodApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
